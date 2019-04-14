@@ -1,0 +1,34 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/14 00:08:35 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/14 00:22:33 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker run -d \
+ --name overlord \
+ --restart always \
+ -p 500:80 \
+ nginx
+
+# 6. Launch an nginx container, available on Docker Hub,
+# as a background task. It should be named overlord, be able to restart
+# on its own, and have its 80 port attached to the 5000 port of Char.
+# You can check that your container functions properly by visiting
+# http://<ip-de-char>:5000 on your web browser.
+
+# Sources:
+# https://hub.docker.com/_/nginx
+
+# Notes:
+# $ docker stop [container-name]/overlord
+# this command stops the container
+# $ docker start [contaienr-name]/overlord
+# this command starts the container
+# ignore '$'

@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    07                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/14 00:30:12 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/14 00:33:10 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker inspect \
+ --format='{{range .NetworkSettings.Networks}}{{println .IPAddress}}{{end}}' \
+ overlord
+
+# 7. Get the internal IP address of the overlord container
+# without starting its shell and in one command.
+
+# Sources:
+# https://docs.docker.com/engine/reference/commandline/inspect/

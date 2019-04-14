@@ -1,0 +1,31 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/13 22:57:17 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/13 23:41:28 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+eval $(docker-machine env Char)
+
+# 3. Define the variables needed by your virtual machine
+# Char in the general env of your terminal, so that you can run
+# the docker ps command without errors. You have to fix all four
+# environment variables with one command, and you are not allowed to use
+# your shell’s builtin to set these variables by hand.
+
+# Sources:
+# https://docs.docker.com/
+# machine/get-started/#unset-environment-variables-in-the-current-shell
+
+# Note:
+# $ env | grep DOCKER
+# this command helps you check the status of the environment variables
+# $ eval $(docker-machine env -u)
+# this command unsets environment variables
+# ignore '$'

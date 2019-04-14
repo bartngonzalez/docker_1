@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/13 22:42:09 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/13 23:20:11 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker-machine ip Char
+
+# 2. Get the IP address of the Char virtual machine.
+# Sources:
+# https://docs.docker.com/machine/reference/ip/
