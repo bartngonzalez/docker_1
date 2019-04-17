@@ -1,0 +1,30 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    09                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/15 16:51:01 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/15 18:53:37 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+apt-get update
+apt-upgrade -y
+apt-get install gcc -y
+apt-get install git -y
+
+# 9. From the shell of a debian container, install via the container’s 
+# package manager everything you need to compile C source code and push 
+# it onto a git repo (of course, make sure before that the package 
+# manager and the packages already in the container are updated).
+# For this exercise, you should only specify the commands
+# to be run directly in the container.
+
+# Notes:
+# For Alpine Linus use these commands
+# apk update
+# apk upgrade
+# apk add git

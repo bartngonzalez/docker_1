@@ -1,0 +1,28 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/15 16:11:21 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/15 16:18:44 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker run -it --rm alpine /bin/ash
+
+# 8. Launch a shell from an alpine container, and make sure that
+# you can interact directly with the container via your terminal,
+# and that the container deletes itself once the shell’s execution is done.
+
+# Sources:
+# https://stackoverflow.com/questions/35689628/
+# starting-a-shell-in-the-docker-alpine-container
+
+# Notes:
+# /bin/ash is Ash (Almquist Shell) provided by BusyBox
+# --rm Automatically remove the container when it exits (docker run --help)
+# -i Interactive mode (Keep STDIN open even if not attached)
+# -t Allocate a pseudo-TTY

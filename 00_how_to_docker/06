@@ -6,7 +6,7 @@
 #    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/14 00:08:35 by bgonzale          #+#    #+#              #
-#    Updated: 2019/04/14 00:22:33 by bgonzale         ###   ########.fr        #
+#    Updated: 2019/04/15 16:37:20 by bgonzale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,4 +31,8 @@ docker run -d \
 # this command stops the container
 # $ docker start [contaienr-name]/overlord
 # this command starts the container
+# $ docker ps
+# this command checks for active docker containers
+# $ docker images
+# this command checks for all docker images and displays them
 # ignore '$'

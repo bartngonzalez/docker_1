@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    11                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/15 19:11:54 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/15 19:12:52 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker volume ls
+
+# 11. List all the Docker volumes created on the machine. Remember. VOLUMES.
+
+# Sources:
+# https://docs.docker.com/storage/volumes/

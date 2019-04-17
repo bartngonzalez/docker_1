@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    13                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/16 16:09:21 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/16 16:14:10 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker inspect --format '{{ .Config.Env }}' spawning-pool
+
+# 13. Print the environment variables of the spawning-pool container
+# in one command, to be sure that you have configured your container properly.
+
+# Sources:
+# https://docs.docker.com/v17.09/edge/engine/reference/commandline/inspect/
+
+# Notes:
+# $ docker exec spawning-pool env
+# A more friendly visual output
+# ignore '$'
