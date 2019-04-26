@@ -6,7 +6,7 @@
 #    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/17 15:32:29 by bgonzale          #+#    #+#              #
-#    Updated: 2019/04/25 22:55:32 by bgonzale         ###   ########.fr        #
+#    Updated: 2019/04/26 01:35:25 by bgonzale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,9 @@ def hello():
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=3000)
 " > ~/hello.py
+chmod 777 ~/hello.py
+docker-machine ssh Char mkdir /home/mypy
+docker-machine ssh Char sudo chmod 777 /home/mypy
 docker-machine scp ~/hello.py Char:/home/mypy
 docker exec Abathur flask run --host=0.0.0.0 --port=3000
 

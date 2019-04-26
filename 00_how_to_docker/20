@@ -1,0 +1,28 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    20                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/25 23:00:02 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/26 01:44:55 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker swarm init --advertise-addr $(docker-machine ip Char)
+
+# 20. Create a local swarm, the Char virtual machine should be its manager.
+
+# Sources:
+# https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+
+# Notes:
+# $ docker info
+# Run docker info to view the current state of the swarm:
+# $ docker node ls
+# Run the docker node ls command to view information about nodes
+# $ docker swarm leave --force
+# Force leave swarm
+# ignore '$'
