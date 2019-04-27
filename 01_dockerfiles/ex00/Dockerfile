@@ -1,31 +1,30 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    33                                                 :+:      :+:    :+:    #
+#    Dockerfile                                         :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/04/27 02:52:51 by bgonzale          #+#    #+#              #
-#    Updated: 2019/04/27 04:15:40 by bgonzale         ###   ########.fr        #
+#    Created: 2019/04/27 03:27:18 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 04:33:16 by bgonzale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!/bin/bash
-docker image rm $(docker images -a -q)
+FROM alpine:3.7
 
-# 33. Delete all the container images stored on the Char virtual machine,
-# in one command as well.
+RUN apk update \
+ && apk upgrade \
+ && apk add --no-cache vim
 
-# Sources:
-# https://docs.docker.com/engine/reference/commandline/image_rm/
+ENTRYPOINT ["vim"]
 
 # Notes:
+# $ docker build --help
+# list of build commands
+# $ docker build -t ex00 .
+# builds Dockerfile with name ex00
+# $ docker run -it --rm ex00
+# runs Dockerfile build ex00
 # $ docker image rm --force $(docker images -a -q)
-# force remove images
-# $ docker images --help
-# list all images commands
-# $ docker images
-# $ docker images -a
-# list all images
-# you can use (images/image) same result
+# removes all docker images that where build by Dockerfile
 # ignore '$'
