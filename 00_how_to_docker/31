@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    31                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/27 02:23:17 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 02:32:40 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker service rm $(docker service ls -q)
+
+# 31. Force quit and delete all the services on the local swarm, in one command.
+
+# Sources:
+# https://stackoverflow.com/questions/49538037/how-to-remove-all-services-in-docker-swarm
+
+# Notes:
+# $ docker service ls
+# list all docker services
+# ignore '$'

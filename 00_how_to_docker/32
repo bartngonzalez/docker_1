@@ -1,0 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    32                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/27 02:43:02 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 02:49:34 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker rm --force $(docker ps -a -q)
+
+# 32. Force quit and delete all the containers (whatever their status),
+# in one command.
+
+# Sources:
+# https://docs.docker.com/engine/reference/commandline/rm/
+
+# Notes:
+# $ docker container ls
+# list all containers
+# $ docker ps
+# list all active containers
+# ignore '$'

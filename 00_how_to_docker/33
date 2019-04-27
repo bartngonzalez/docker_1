@@ -1,0 +1,29 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    33                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/27 02:52:51 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 03:02:23 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker image rm $(docker images -a -q)
+
+# 33. Delete all the container images stored on the Char virtual machine,
+# in one command as well.
+
+# Sources:
+# https://docs.docker.com/engine/reference/commandline/image_rm/
+
+# Notes:
+# $ docker images --help
+# list all images commands
+# $ docker images
+# $ docker images -a
+# list all images
+# you can use (images/image) same result
+# ignore '$'

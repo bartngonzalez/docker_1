@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    29                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/27 02:09:55 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 02:40:10 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker service ps marines
+
+# 29. Display all the tasks of the marines service.
+
+# Notes:
+# $ docker service logs marines
+# Gets the real-time logs of one the tasks of the marines service.
+# $ docker service ls
+# List all docker services
+# ignore '$'

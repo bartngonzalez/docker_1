@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    34                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/27 03:06:27 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 03:12:42 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker-machine rm -y Aiur
+
+# 34. Delete the Aiur virtual machine without using rm -rf.
+
+# Sources:
+# https://docs.docker.com/machine/reference/rm/
+
+# Notes:
+# $ docker-machine rm --help
+# list docker-machine rm options
+# $ docker-machine ls
+# list all docker machines
+# ignore '$'

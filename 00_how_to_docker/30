@@ -1,0 +1,30 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    30                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/27 02:17:39 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 02:28:09 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker service scale marines=20
+
+# 30. Increase the number of copies of the marines service up to twenty,
+# because there’s never enough Marines to eliminate Zergs. (Remember to take
+# a look at the tasks and logs of the service, you’ll see, it’s fun.)
+
+# Sources:
+# https://docs.docker.com/engine/reference/commandline/service_scale/
+
+# Notes:
+# $ docker service ps marines
+# Gets active marines tasks
+# $ docker service logs marines
+# Gets the real-time logs of one the tasks of the marines service.
+# $ docker service ls
+# List all docker services
+# ignore '$'

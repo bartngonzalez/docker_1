@@ -1,32 +1,30 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    26                                                 :+:      :+:    :+:    #
+#    28                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/04/26 21:35:33 by bgonzale          #+#    #+#              #
-#    Updated: 2019/04/27 03:15:44 by bgonzale         ###   ########.fr        #
+#    Created: 2019/04/27 00:46:40 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/27 01:53:29 by bgonzale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 docker service create -d \
- --name engineering-bay \
+ --name marines \
  --network overmind \
  --replicas 2 \
  -e OC_USERNAME=bgonzale \
  -e OC_PASSWD=bg42 \
- 42school/engineering-bay
+ 42school/marine-squad
 
-# 26. Launch a 42school/engineering-bay service in two replicas and make sure
-# that the service works properly (see the documentation provided at hub.docker.com)
-# This service will be named engineering-bay and will be on the overmind network.
+# 28. ... Damn it, a group of zergs is attacking orbital-command, and shutting
+# down the engineering-bay service won’t help at all... You must send a troup
+# of Marines to eliminate the intruders. Launch a 42school/marine-squad in two
+# replicas, and make sure that the service works properly (see the
+# documentation provided at hub.docker.com). This service will be named...
+# marines and will be on the overmind network.
 
 # Sources:
-# https://hub.docker.com/r/42school/engineering-bay/
-
-# Notes:
-# $ docker service ls
-# list all active services
-# ignore '$'
+# https://hub.docker.com/r/42school/marine-squad
