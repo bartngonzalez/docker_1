@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    25                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/26 21:31:04 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/26 21:33:08 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker service ls
+
+# 25. List all the services of the local swarm.
+
+# Sources:
+# https://docs.docker.com/engine/reference/commandline/service_ls/

@@ -1,0 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    23                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/26 18:52:54 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/26 18:59:22 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker network create -d overlay overmind
+
+# 23. Create an overlay-type internal network that you will name overmind.
+
+# Sources:
+# https://docs.docker.com/network/overlay/
+# https://docs.docker.com/engine/reference/commandline/network_ls/
+
+# Notes:
+# $ docker network ls
+# list all networks
+# $ docker network rm [network-name]
+# removes network
+# ignore "$"

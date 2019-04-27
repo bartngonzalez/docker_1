@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    27                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bgonzale <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/26 21:47:51 by bgonzale          #+#    #+#              #
+#    Updated: 2019/04/26 21:48:40 by bgonzale         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+docker service logs engineering-bay
+
+# 27. Get the real-time logs of one the tasks of the engineering-bay service.
+
+# Sources:
+# https://docs.docker.com/engine/reference/commandline/service_logs/
